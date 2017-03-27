@@ -1,0 +1,55 @@
+<html>
+ <head>
+  <title>New Tab</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="medium-editor.css" />
+  <link rel="stylesheet" type="text/css" href="editor-theme.css" />
+  <link rel="stylesheet" type="text/css" href="home.css" />
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  <script src="jquery-1.12.4.min.js"></script>
+  <script src="medium-editor.js"></script>
+  <script src="data-access.js"></script>
+  <script src="working-time.js"></script>
+  <script src="home.js"></script>
+ </head>
+ <body>
+   <aside class="side-bar left">
+     <div class="section-header">
+        <h4>Recommendation Link</h4>
+        <hr />
+      </div>
+      <div class="content">
+        <table class="table table-striped table-hover">
+  <tbody id="lstLink">
+  </tbody>
+</table>
+      </div>
+   </aside>
+   <section class="main">
+     <div class="section-header">
+        <h4>Keep a log</h4>
+        <hr />
+      </div>
+      <div class=content>
+        <!-- <textarea class="form-control" rows="3" id="textArea"></textarea> -->
+        <div id="editor">
+        </div>
+      </div>
+   </section>
+   <aside class="side-bar right">
+     <div class="section-header">
+        <h4>Working time</h4>
+        <hr />
+      </div>
+      <div class="content">
+        <table class="table table-striped table-hover">
+  <tbody id="lstWorkingTime">
+  </tbody>
+</table>
+      </div>
+      <div class="section-footer alert alert-dismissible alert-warning">
+  <h4>You miss 120 minutes!</h4>
+      </div>
+   </aside>
+ </body>
+</html>

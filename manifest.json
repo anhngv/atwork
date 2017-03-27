@@ -1,0 +1,16 @@
+{
+  "name": "At Work",
+  "description": "Everything you should do at work",
+  "version": "0.1",
+  "chrome_url_overrides": {
+    "newtab": "home.html"
+  },
+  "options_page": "options.html",
+  "background": { "scripts": ["background.js"] },
+   "permissions": [
+          "storage",
+          "bookmarks",
+          "notifications"
+        ],
+  "manifest_version": 2
+}
