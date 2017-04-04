@@ -1,84 +1,87 @@
 * {
-  font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', monospace;
 }
 
 h1, h2, h3, h4, h5 {
-  color: #1a191b;
+    color: #1a191b;
 }
 
-p {
+/*p {
     color: #707679;
     letter-spacing: -.5px;
     font-size: 17px;
-    font-family: Roboto,"Arial",Sans-Serif;
-}
+    font-family: Roboto, "Arial", Sans-Serif;
+}*/
 
 body {
-  position: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
     background-color: #f5f6f6;
 }
+
 aside.side-bar {
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+
 aside.side-bar.left {
-  left: 0;
+    left: 0;
 }
+
 aside.side-bar.right {
-  right: 0;
-  background-color: #f5f6f6;
+    right: 0;
+    background-color: #f5f6f6;
 }
+
 section.main {
-  position: absolute;
-  left: 25%;
-  width: 50%;
-  background: #fff;
-  height: 100%;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    background: #fff;
+    height: 100%;
 }
 
 .section-header {
-  text-transform: uppercase;
-  text-align: center;
-  margin: 10px;
-  color: #1a191b;
-  font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    color: #1a191b;
+    font-weight: bold;
 }
 
 .left .section-header {
-  text-align: right;
+    text-align: right;
 }
 
 .right .section-header {
-text-align: left;
-height: 32px
+    text-align: left;
+    height: 32px
 }
 
-.section-header hr
-{
-  display: block;
-width: 20%;
-height: 3px;
-border: 0;
-background: #5aa738;
-margin: 0 auto 0;
+.section-header hr {
+    display: block;
+    width: 20%;
+    height: 3px;
+    border: 0;
+    background: #5aa738;
+    margin: 0 auto 0;
 }
 
 .left .section-header hr {
-  float: right;
+    float: right;
 }
 
 .right .section-header hr {
-  float: left;
+    float: left;
 }
 
 aside.side-bar.left .content {
-  position: absolute;
+    position: absolute;
     height: calc(100% - 40px);
     overflow-y: visible;
     overflow-x: hidden;
@@ -86,27 +89,28 @@ aside.side-bar.left .content {
 }
 
 aside.side-bar.left .content td {
-  text-align: right;
-  max-width: 200px;
+    text-align: right;
+    max-width: 200px;
 }
+
 aside.side-bar.left .content td a {
-  text-decoration: none;
-  color: #1a191b;
-  display: block;
+    text-decoration: none;
+    color: #1a191b;
+    display: block;
     height: 20px;
     overflow: hidden;
 }
 
 aside.side-bar.left .content td a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 aside.side-bar.left .content tr td:last-child {
-  width: 20px;
+    width: 20px;
 }
 
 aside.side-bar.right .content {
-  position: absolute;
+    position: absolute;
     height: calc(100% - 124px);
     overflow-y: scroll;
     overflow-x: hidden;
@@ -114,7 +118,7 @@ aside.side-bar.right .content {
 }
 
 aside.side-bar.right .section-footer {
-  position: absolute;
+    position: absolute;
     bottom: 0;
     width: calc(100% - 18px);
     margin: 0 10px 10px 8px;
@@ -129,46 +133,43 @@ aside.side-bar.right .section-footer {
 }
 
 .content table tr td {
-  vertical-align: middle;
-  height: 55px;
+    vertical-align: middle;
+    height: 55px;
 }
 
 .main .content textarea {
-  width: 100%;
-  height: calc(100% - 60px);
+    width: 100%;
+    height: calc(100% - 60px);
 }
 
 #editor {
-  width: calc(100% + 18px);
-height: calc(100% - 60px);
-max-height: calc(100% - 60px);
-overflow-y: visible;
-overflow-x: hidden;
-margin: 0px 10px;
-outline: 0;
+    width: calc(100% + 5px);
+    height: calc(100% - 60px);
+    max-height: calc(100% - 60px);
+    overflow-y: visible;
+    overflow-x: hidden;
+    margin: 0px 10px;
+    outline: 0;
 }
 
-#lstWorkingTime tr.weekend {
-
-}
+#lstWorkingTime tr.weekend {}
 
 .content table tr td input[type="text"] {
-  width: 70px;
+    width: 70px;
 }
 
 .content td.check-in span {
-padding-left: 10px;
-}
-.content td.check-out span{
-padding-left: 10px;
+    padding-left: 10px;
 }
 
-.content td.check-in input[type="text"],.content td.check-out input[type="text"],
-.content td.check-in.edited span,.content td.check-out.edited span {
-  display: none;
+.content td.check-out span {
+    padding-left: 10px;
 }
 
-.content td.check-in.edited input[type="text"],.content td.check-out.edited input[type="text"],
-.content td.check-in span,.content td.check-out span {
-  display: block;
+.content td.check-in input[type="text"], .content td.check-out input[type="text"], .content td.check-in.edited span, .content td.check-out.edited span {
+    display: none;
+}
+
+.content td.check-in.edited input[type="text"], .content td.check-out.edited input[type="text"], .content td.check-in span, .content td.check-out span {
+    display: block;
 }
